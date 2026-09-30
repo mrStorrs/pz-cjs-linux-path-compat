@@ -2,7 +2,7 @@ package com.cjstorrs.cjslinuxpathcompat;
 
 import java.io.File;
 import java.net.URI;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import me.zed_0xff.zombie_buddy.Patch;
 import zombie.ZomboidFileSystem;
@@ -21,7 +21,7 @@ public final class Patch_ScriptManager_SearchFolders {
     public static boolean preserveLeafPathCase(
         @Patch.Argument(0) URI base,
         @Patch.Argument(1) File file,
-        @Patch.Argument(2) ArrayList<String> scriptPaths
+        @Patch.Argument(2) List<String> scriptPaths
     ) {
         if (file.isDirectory()) {
             return false;

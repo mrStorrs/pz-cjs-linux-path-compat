@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ZOMBIE_BUDDY_JAR="${ZOMBIE_BUDDY_JAR:-/home/cjstorrs/games/Project Zomboid Linux 42.20.0/game/projectzomboid/ZombieBuddy.jar}"
 BUILD_DIR="${ROOT_DIR}/.build"
-OUT_JAR="${ROOT_DIR}/42.20/media/java/cjsLinuxPathCompat.jar"
+OUT_JAR="${ROOT_DIR}/42.21/media/java/cjsLinuxPathCompat.jar"
 
 if [[ ! -f "${ZOMBIE_BUDDY_JAR}" ]]; then
     echo "ZombieBuddy jar not found: ${ZOMBIE_BUDDY_JAR}" >&2

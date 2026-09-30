@@ -37,7 +37,7 @@ public final class LinuxPathCompatTest {
                 "preserveLeafPathCase",
                 URI.class,
                 File.class,
-                ArrayList.class
+                List.class
             )
             .getAnnotation(Patch.OnEnter.class);
         check(enter != null && enter.skipOn(), "leaf interception must skip vanilla code");
