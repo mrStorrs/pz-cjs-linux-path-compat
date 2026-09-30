@@ -22,3 +22,7 @@ Build and test with:
 
 B42.21 changes `searchFolders` from `ArrayList<String>` to `List<String>`.
 The 42.21 payload targets that signature; the original 42.20 JAR is retained.
+
+The B42.21 payload also registers real roots of installed mod symlinks with
+the game filesystem, allowing the standard asset-prefix validator to recognize
+project-backed mods. Runtime confirmation is pending the user's next launch.
